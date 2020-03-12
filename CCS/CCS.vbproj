@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{295B1CEB-0F9A-48B3-B686-D5082F098CED}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CCS</RootNamespace>
+    <AssemblyName>CCS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CCS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <IncludeIisSettings>true</IncludeIisSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CCS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>F:\CCS\CCS\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin, Version=4.97.4951.28478, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CRM VIPS ATC\VIPS\bin\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DataVisualization.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Agente.ascx" />
+    <Content Include="Asistencia\Administracion.aspx" />
+    <Content Include="Asistencia\HO.aspx" />
+    <Content Include="Asistencia\Secundarias.aspx" />
+    <Content Include="Asistencia\Asistencia.aspx" />
+    <Content Include="Asistencia\Incidencias.aspx" />
+    <Content Include="Asistencia\X.aspx" />
+    <Content Include="Aspirante.ascx" />
+    <Content Include="Calidad\Agregar_Catalogos.aspx" />
+    <Content Include="Calidad\Agregar_Rubros.aspx" />
+    <Content Include="Calidad\Alta_2.aspx" />
+    <Content Include="Calidad\Alta_1.aspx" />
+    <Content Include="Calidad\Alta_3.aspx" />
+    <Content Include="Calidad\Alta_4.aspx" />
+    <Content Include="Calidad\Asignacion_Analista.aspx" />
+    <Content Include="Calidad\Coaching.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Calidad\Coaching_Agente.aspx" />
+    <Content Include="Calidad\Coaching_Sup.aspx" />
+    <Content Include="Calidad\Editar_Calificacion.aspx" />
+    <Content Include="Calidad\Editar_Calificacion_2.aspx" />
+    <Content Include="Calidad\Editar_Rubros.aspx" />
+    <Content Include="Calidad\FODA.aspx" />
+    <Content Include="Calidad\FODA_Sup.aspx" />
+    <Content Include="Calidad\MenuEdicion.aspx" />
+    <Content Include="Calidad\Modificar_Ponderacion.aspx" />
+    <Content Include="Calidad\Monitoreo.aspx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Capacitacion\Administracion.aspx" />
+    <Content Include="Capacitacion\Aplicar_Evaluacion.aspx" />
+    <Content Include="Capacitacion\Selecciona_Evaluacion.aspx" />
+    <Content Include="Capacitacion\Nueva_Evaluacion.aspx" />
+    <Content Include="Capacitacion\HO.aspx" />
+    <Content Include="Capacitacion\Secundarias.aspx" />
+    <Content Include="Capacitacion\X.aspx" />
+    <Content Include="Implementacion\Consulta.aspx" />
+    <Content Include="Images\brisa_hernandez.png" />
+    <Content Include="Images\check.jpg" />
+    <Content Include="Images\cross.jpg" />
+    <Content Include="Images\diego_hernandez.png" />
+    <Content Include="Images\huziel_arguello.png" />
+    <Content Include="Images\joyce_hernandez.png" />
+    <Content Include="Images\luis_martinez.png" />
+    <Content Include="Images\luis_montes.png" />
+    <Content Include="Images\mario_raymundo.png" />
+    <Content Include="Calidad\Reportes.aspx" />
+    <Content Include="Calidad\Resumen.aspx" />
+    <Content Include="Calidad\Retro_Calidad.aspx" />
+    <Content Include="Calidad\Retro_Supervisor.aspx" />
+    <Content Include="Calidad\Seleccionar_Guia.aspx" />
+    <Content Include="CommandCenter\Semaforo_IN.aspx" />
+    <Content Include="Images\Check-3-icon.png" />
+    <Content Include="Images\database-icon.png" />
+    <Content Include="Images\Elegantthemes-Beautiful-Flat-Play.ico" />
+    <Content Include="Images\Header_Alerta.png" />
+    <Content Include="Images\Header_Coaching.png" />
+    <Content Include="Images\Header_Error.png" />
+    <Content Include="Images\Header_FODA.png" />
+    <Content Include="Images\Very-Basic-Plus-icon.png" />
+    <Content Include="Implementacion\Ficha_Implementacion.aspx" />
+    <Content Include="Implementacion\Gestion_Cambios.aspx" />
+    <Content Include="JS\funcionesReproductor.js.js" />
+    <Content Include="Calidad\Password.aspx" />
+    <Content Include="CSS\style.css" />
+    <Content Include="CSS\toastr.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Arrows-Left-Circular-icon.png" />
+    <Content Include="Images\Arrows-Right-Circular-icon.png" />
+    <Content Include="Images\arrows-white.png" />
+    <Content Include="Images\back.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\calendario.png" />
+    <Content Include="Images\ccs_logo.png" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\title.gif" />
+    <Content Include="JS\jquery.validationEngine-en.js" />
+    <Content Include="JS\jquery.validationEngine.js" />
+    <Content Include="JS\Options.js" />
+    <Content Include="JS\jquery-1.6.3.js" />
+    <Content Include="JS\jquery.easing-sooper.js" />
+    <Content Include="JS\jquery.sooperfish.js" />
+    <Content Include="JS\modernizr-1.5.min.js" />
+    <Content Include="Calidad\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agente.ascx.designer.vb">
+      <DependentUpon>Agente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Agente.ascx.vb">
+      <DependentUpon>Agente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Asistencia\Administracion.aspx.designer.vb">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Asistencia\Administracion.aspx.vb">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Asistencia\HO.aspx.designer.vb">
+      <DependentUpon>HO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Asistencia\HO.aspx.vb">
+      <DependentUpon>HO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Asistencia\Secundarias.aspx.designer.vb">
+      <DependentUpon>Secundarias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Asistencia\Secundarias.aspx.vb">
+      <DependentUpon>Secundarias.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Asistencia\Asistencia.aspx.designer.vb">
+      <DependentUpon>Asistencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Asistencia\Asistencia.aspx.vb">
+      <DependentUpon>Asistencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Asistencia\Incidencias.aspx.designer.vb">
+      <DependentUpon>Incidencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Asistencia\Incidencias.aspx.vb">
+      <DependentUpon>Incidencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Asistencia\X.aspx.designer.vb">
+      <DependentUpon>X.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Asistencia\X.aspx.vb">
+      <DependentUpon>X.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aspirante.ascx.designer.vb">
+      <DependentUpon>Aspirante.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Aspirante.ascx.vb">
+      <DependentUpon>Aspirante.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Agregar_Catalogos.aspx.designer.vb">
+      <DependentUpon>Agregar_Catalogos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Agregar_Catalogos.aspx.vb">
+      <DependentUpon>Agregar_Catalogos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Agregar_Rubros.aspx.designer.vb">
+      <DependentUpon>Agregar_Rubros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Agregar_Rubros.aspx.vb">
+      <DependentUpon>Agregar_Rubros.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Alta_2.aspx.designer.vb">
+      <DependentUpon>Alta_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Alta_2.aspx.vb">
+      <DependentUpon>Alta_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Alta_1.aspx.designer.vb">
+      <DependentUpon>Alta_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Alta_1.aspx.vb">
+      <DependentUpon>Alta_1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Alta_3.aspx.designer.vb">
+      <DependentUpon>Alta_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Alta_3.aspx.vb">
+      <DependentUpon>Alta_3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Alta_4.aspx.designer.vb">
+      <DependentUpon>Alta_4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Alta_4.aspx.vb">
+      <DependentUpon>Alta_4.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Asignacion_Analista.aspx.designer.vb">
+      <DependentUpon>Asignacion_Analista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Asignacion_Analista.aspx.vb">
+      <DependentUpon>Asignacion_Analista.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Coaching.aspx.designer.vb">
+      <DependentUpon>Coaching.aspx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Calidad\Coaching.aspx.vb">
+      <DependentUpon>Coaching.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Calidad\Coaching_Agente.aspx.designer.vb">
+      <DependentUpon>Coaching_Agente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Coaching_Agente.aspx.vb">
+      <DependentUpon>Coaching_Agente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Coaching_Sup.aspx.designer.vb">
+      <DependentUpon>Coaching_Sup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Coaching_Sup.aspx.vb">
+      <DependentUpon>Coaching_Sup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Editar_Calificacion.aspx.designer.vb">
+      <DependentUpon>Editar_Calificacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Editar_Calificacion.aspx.vb">
+      <DependentUpon>Editar_Calificacion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Editar_Calificacion_2.aspx.designer.vb">
+      <DependentUpon>Editar_Calificacion_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Editar_Calificacion_2.aspx.vb">
+      <DependentUpon>Editar_Calificacion_2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Editar_Rubros.aspx.designer.vb">
+      <DependentUpon>Editar_Rubros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Editar_Rubros.aspx.vb">
+      <DependentUpon>Editar_Rubros.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\FODA.aspx.designer.vb">
+      <DependentUpon>FODA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\FODA.aspx.vb">
+      <DependentUpon>FODA.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\FODA_Sup.aspx.designer.vb">
+      <DependentUpon>FODA_Sup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\FODA_Sup.aspx.vb">
+      <DependentUpon>FODA_Sup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\MenuEdicion.aspx.designer.vb">
+      <DependentUpon>MenuEdicion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\MenuEdicion.aspx.vb">
+      <DependentUpon>MenuEdicion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Modificar_Ponderacion.aspx.designer.vb">
+      <DependentUpon>Modificar_Ponderacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Modificar_Ponderacion.aspx.vb">
+      <DependentUpon>Modificar_Ponderacion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Monitoreo.aspx.designer.vb">
+      <DependentUpon>Monitoreo.aspx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Calidad\Monitoreo.aspx.vb">
+      <DependentUpon>Monitoreo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Capacitacion\Administracion.aspx.designer.vb">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\Administracion.aspx.vb">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\Aplicar_Evaluacion.aspx.designer.vb">
+      <DependentUpon>Aplicar_Evaluacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\Aplicar_Evaluacion.aspx.vb">
+      <DependentUpon>Aplicar_Evaluacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\Selecciona_Evaluacion.aspx.designer.vb">
+      <DependentUpon>Selecciona_Evaluacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\Selecciona_Evaluacion.aspx.vb">
+      <DependentUpon>Selecciona_Evaluacion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\Nueva_Evaluacion.aspx.designer.vb">
+      <DependentUpon>Nueva_Evaluacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\Nueva_Evaluacion.aspx.vb">
+      <DependentUpon>Nueva_Evaluacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\HO.aspx.designer.vb">
+      <DependentUpon>HO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\HO.aspx.vb">
+      <DependentUpon>HO.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\Secundarias.aspx.designer.vb">
+      <DependentUpon>Secundarias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\Secundarias.aspx.vb">
+      <DependentUpon>Secundarias.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\X.aspx.designer.vb">
+      <DependentUpon>X.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\X.aspx.vb">
+      <DependentUpon>X.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Reportes.aspx.designer.vb">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Reportes.aspx.vb">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Resumen.aspx.designer.vb">
+      <DependentUpon>Resumen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Resumen.aspx.vb">
+      <DependentUpon>Resumen.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Retro_Calidad.aspx.designer.vb">
+      <DependentUpon>Retro_Calidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Retro_Calidad.aspx.vb">
+      <DependentUpon>Retro_Calidad.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Retro_Supervisor.aspx.designer.vb">
+      <DependentUpon>Retro_Supervisor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Retro_Supervisor.aspx.vb">
+      <DependentUpon>Retro_Supervisor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Seleccionar_Guia.aspx.designer.vb">
+      <DependentUpon>Seleccionar_Guia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Seleccionar_Guia.aspx.vb">
+      <DependentUpon>Seleccionar_Guia.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calidad\Password.aspx.designer.vb">
+      <DependentUpon>Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Password.aspx.vb">
+      <DependentUpon>Password.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CommandCenter\Semaforo_IN.aspx.designer.vb">
+      <DependentUpon>Semaforo_IN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommandCenter\Semaforo_IN.aspx.vb">
+      <DependentUpon>Semaforo_IN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Implementacion\Consulta.aspx.designer.vb">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Implementacion\Consulta.aspx.vb">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Functions.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Implementacion\Ficha_Implementacion.aspx.designer.vb">
+      <DependentUpon>Ficha_Implementacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Implementacion\Ficha_Implementacion.aspx.vb">
+      <DependentUpon>Ficha_Implementacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Implementacion\Gestion_Cambios.aspx.designer.vb">
+      <DependentUpon>Gestion_Cambios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Implementacion\Gestion_Cambios.aspx.vb">
+      <DependentUpon>Gestion_Cambios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Masterpages\Content.Master.designer.vb">
+      <DependentUpon>Content.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masterpages\Content.Master.vb">
+      <DependentUpon>Content.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masterpages\Login.Master.designer.vb">
+      <DependentUpon>Login.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masterpages\Login.Master.vb">
+      <DependentUpon>Login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Calidad\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calidad\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Recuperar_Password.aspx.designer.vb">
+      <DependentUpon>Recuperar_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Recuperar_Password.aspx.vb">
+      <DependentUpon>Recuperar_Password.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="TroncoComun.ascx.designer.vb">
+      <DependentUpon>TroncoComun.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TroncoComun.ascx.vb">
+      <DependentUpon>TroncoComun.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fonts\YanoneKaffeesatz-Regular.ttf" />
+    <Content Include="JS\toastr.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Masterpages\Content.Master" />
+    <Content Include="Masterpages\Login.Master" />
+    <Content Include="Calidad\Web.config" />
+    <Content Include="Asistencia\Web.config" />
+    <Content Include="Capacitacion\Web.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Recuperar_Password.aspx" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TroncoComun.ascx" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Microsoft\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59264</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59264/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\RICARDO GM\Desktop\RGM</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Agente.ascx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Asistencia/Administracion.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Asistencia/Asistencia.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Asistencia/HO.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Asistencia/Incidencias.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Asistencia/Secundarias.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Asistencia/Web.config">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Asistencia/X.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Aspirante.ascx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>10/14/2019 12:36:17</publishTime>
+    </File>
+    <File Include="bin/AjaxMin.dll">
+      <publishTime>10/14/2019 12:36:17</publishTime>
+    </File>
+    <File Include="bin/Calidad/Coaching.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="bin/Calidad/Coaching.aspx.designer.vb">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="bin/Calidad/Coaching.aspx.vb">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="bin/Calidad/Monitoreo.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="bin/Calidad/Monitoreo.aspx.designer.vb">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="bin/Calidad/Monitoreo.aspx.vb">
+      <publishTime>02/06/2020 13:38:27</publishTime>
+    </File>
+    <File Include="bin/CCS.dll">
+      <publishTime>02/06/2020 15:25:58</publishTime>
+    </File>
+    <File Include="bin/CCS.pdb">
+      <publishTime>02/06/2020 15:25:58</publishTime>
+    </File>
+    <File Include="bin/CCS.xml">
+      <publishTime>02/06/2020 15:25:58</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.DataVisualization.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.ProcessingObjectModel.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WinForms.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Types.dll">
+      <publishTime>10/14/2019 12:36:20</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x64/msvcr120.dll">
+      <publishTime>10/14/2019 12:36:17</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x64/SqlServerSpatial140.dll">
+      <publishTime>10/14/2019 12:36:17</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x86/msvcr120.dll">
+      <publishTime>10/14/2019 12:36:17</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x86/SqlServerSpatial140.dll">
+      <publishTime>10/14/2019 12:36:17</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-HANS/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-HANS/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-HANS/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-HANS/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-HANT/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-HANT/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-HANT/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="bin/zh-HANT/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>10/14/2019 12:36:19</publishTime>
+    </File>
+    <File Include="Calidad/Agregar_Catalogos.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Agregar_Rubros.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Alta_1.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Alta_2.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Alta_3.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Alta_4.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Asignacion_Analista.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Coaching.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Coaching_Agente.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Coaching_Sup.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Default.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Editar_Calificacion.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Editar_Calificacion_2.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Editar_Rubros.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/FODA.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/FODA_Sup.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/MenuEdicion.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Modificar_Ponderacion.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Monitoreo.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Password.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Reportes.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Resumen.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Retro_Calidad.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Retro_Supervisor.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Seleccionar_Guia.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Calidad/Web.config">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Capacitacion/Administracion.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Capacitacion/Aplicar_Evaluacion.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Capacitacion/HO.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Capacitacion/Nueva_Evaluacion.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Capacitacion/Secundarias.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Capacitacion/Selecciona_Evaluacion.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Capacitacion/Web.config">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Capacitacion/X.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="CommandCenter/Semaforo_IN.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="CSS/style.css">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="CSS/toastr.css">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Fonts/YanoneKaffeesatz-Regular.ttf">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/Arrows-Left-Circular-icon.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/Arrows-Right-Circular-icon.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/arrows-white.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/back.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/brisa_hernandez.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/bullet.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/calendario.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/ccs_logo.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/Check-3-icon.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/check.jpg">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/cross.jpg">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/database-icon.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/diego_hernandez.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/Elegantthemes-Beautiful-Flat-Play.ico">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/Header_Alerta.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/Header_Coaching.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/Header_Error.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/Header_FODA.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/huziel_arguello.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/joyce_hernandez.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/luis_martinez.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/luis_montes.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/mario_raymundo.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/search.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/title.gif">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Images/Very-Basic-Plus-icon.png">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Implementacion/Consulta.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Implementacion/Ficha_Implementacion.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Implementacion/Gestion_Cambios.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="JS/funcionesReproductor.js.js">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="JS/jquery-1.6.3.js">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="JS/jquery.easing-sooper.js">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="JS/jquery.sooperfish.js">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="JS/jquery.validationEngine-en.js">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="JS/jquery.validationEngine.js">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="JS/modernizr-1.5.min.js">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="JS/Options.js">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="JS/toastr.min.js">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Masterpages/Content.Master">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Masterpages/Login.Master">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="Recuperar_Password.aspx">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="SqlServerTypes/Loader.cs">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="SqlServerTypes/readme.htm">
+      <publishTime>10/14/2019 12:36:16</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x64/msvcr120.dll">
+      <publishTime>10/14/2019 12:36:17</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x64/SqlServerSpatial140.dll">
+      <publishTime>10/14/2019 12:36:17</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x86/msvcr120.dll">
+      <publishTime>10/14/2019 12:36:17</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x86/SqlServerSpatial140.dll">
+      <publishTime>10/14/2019 12:36:17</publishTime>
+    </File>
+    <File Include="TroncoComun.ascx">
+      <publishTime>10/14/2019 12:36:17</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>10/14/2019 13:43:35</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

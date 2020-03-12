@@ -1,0 +1,218 @@
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Content.Master.vb" Inherits="CCS.Maestra" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head runat="server">
+
+    <title>CCS</title>
+
+
+    <script src="../JS/jquery-1.6.3.js"></script>
+    <script src="../JS/modernizr-1.5.min.js"></script>
+    <script src="../JS/toastr.min.js"></script>
+    <script type="text/javascript" src="../JS/jquery.easing-sooper.js"></script>
+    <script type="text/javascript" src="../JS/jquery.sooperfish.js"></script>
+    <script type="text/javascript">$(document).ready(function () { $('ul.sf-menu').sooperfish(); });</script>
+
+    <script src="../JS/Options.js"></script>
+
+    <script type="text/javascript">
+        $(window).bind("load", function () {
+            var footer = $("#footer");
+            var pos = footer.position();
+            var height = $(window).height();
+            height = height - pos.top;
+            height = height - footer.height();
+            if (height > 0) {
+                footer.css({
+                    'margin-top': height + 'px'
+                });
+            }
+        });
+    </script>
+
+    <link rel="stylesheet" type="text/css" id="theme" href="../css/style.css" />
+    <link href="../CSS/toastr.css" rel="stylesheet" />
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .auto-style1 {
+            left: 0;
+            top: 5px;
+            width: 302px;
+            height: 104px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+        <div id="main">
+            <header>
+                <div id="logo">
+                    <div id="logo_text" class="auto-style1">
+
+                        <br />
+
+                        <asp:Image ID="Image1" runat="server" ImageUrl="../images/ccs_logo.png" Height="66px" Width="127px" ImageAlign="Middle" />
+
+                        <h2>Sistema Integral de Administración</h2>
+
+                    </div>
+                </div>
+                <nav>
+                    <ul class="sf-menu" id="nav">
+                        <li class="current"><a href=".././Calidad/Default.aspx">Inicio</a></li>
+                        <li class="current" runat="server" id="QAGeneral"><a href="#">Calidad</a>
+                            <ul>
+                                <li class="current" runat="server" id="MonitoreoQA"><a href=".././Calidad/Seleccionar_Guia.aspx">Monitoreo</a></li>
+                                <li class="current" runat="server" id="RetroQA"><a href=".././Calidad/Retro_Calidad.aspx">Retroalimentación</a></li>
+                                <li class="current" runat="server" id="ResumenQA"><a href=".././Calidad/Resumen.aspx">Resumen QA</a></li>
+                            </ul>
+                        </li>
+                        <li class="current"><a href="#">Operaciones</a>
+                            <ul>
+
+                                <li class="current" runat="server" id="RetroSUP"><a href=".././Calidad/Retro_Supervisor.aspx">Retro Supervisor</a></li>
+                                <li class="current" runat="server" id="RetroAG"><a href=".././Calidad/Coaching_Agente.aspx">Retroalimentación</a></li>
+                                <li class="current" runat="server" id="ResumenOP"><a href=".././Calidad/Resumen.aspx">Resumen</a></li>
+                                <li class="current" runat="server" id="Asistencia"><a href=".././Asistencia/Asistencia.aspx">Control de Asistencia</a></li>
+                                <li class="current" runat="server" id="Incidencias"><a href=".././Asistencia/Incidencias.aspx">Incidencias</a></li>
+                                <li class="current" runat="server" id="SecundariasOP"><a href=".././Asistencia/Secundarias.aspx">Capacitaciones Secundarias</a></li>
+                                <li class="current" runat="server" id="HO"><a href=".././Asistencia/HO.aspx">Habilidades Operativas</a></li>
+                            </ul>
+                        </li>
+                        <li class="current"><a href="#">Capacitación</a>
+                            <ul>
+                                <li class="current" runat="server" id="MisEvaluaciones"><a href=".././Capacitacion/Selecciona_Evaluacion.aspx">Mis Evaluaciones</a></li>
+                                <li class="current" runat="server" id="NuevaEvaluacion"><a href=".././Capacitacion/Nueva_Evaluacion.aspx">Nueva Evaluacion</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="current" runat="server" id="CCGeneral"><a href="#">Command Center</a>
+                            <ul>
+                                <li class="current" runat="server" id="SemaforoIN"><a href=".././CommandCenter/Semaforo_IN.aspx">Semaforo Inbound</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="current" runat="server" id="Imple"><a href="#">Implementación</a>
+                            <ul>
+                                <li class="current" runat="server" id="IMP_Nuevo_Proyecto"><a href=".././Implementacion/Ficha_Implementacion.aspx">Nuevo Proyecto</a></li>
+                                <li class="current" runat="server" id="IMP_Consulta"><a href=".././Implementacion/Consulta.aspx">Consulta</a></li>
+                                 <li class ="current" runat="server" id="IMP_Gestion_Cambios"><a href=".././Implementacion/Gestion_Cambios.aspx">Gestión de Cambios</a></li> 
+                            </ul>
+                        </li>
+
+
+                        <li class="current" runat="server" id="REPGeneral"><a href="#">Reportes</a>
+                            <ul>
+
+                                <li class="current" runat="server" id="REP_General"><a href=".././Calidad/Reportes.aspx?reportindex=1&campania=0">General</a></li>
+                                <li class="current" runat="server" id="REP_Calidad"><a href=".././Calidad/Reportes.aspx?reportindex=2&campania=0">Calidad</a></li>
+                                <li class="current" runat="server" id="REP_Campanias"><a href="#">Campañas</a>
+
+                                    <ul id="ListaReportes" runat="server">
+                                        <li class="current"><a id="Pruebitita" runat="server" href=".././Calidad/Reportes.aspx?reportindex=3">Prueba</a></li>
+                                    </ul>
+
+
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="current" runat="server" id="AdminGeneral"><a href="#">Administración</a>
+
+                            <ul>
+
+                                <li class="current"><a href="#">Calidad</a>
+                                    <ul>
+                                        <li class="current" runat="server" id="Diseño"><a href=".././Calidad/Alta_1.aspx">Diseño de Guias</a></li>
+                                        <li class="current" runat="server" id="Edicion"><a href=".././Calidad/MenuEdicion.aspx">Edición de Guias</a></li>
+                                        <li class="current" runat="server" id="Asignacion"><a href=".././Calidad/Asignacion_Analista.aspx">Asignación de Analista</a></li>
+                                        <li class="current" runat="server" id="Catalogo"><a href=".././Calidad/Agregar_Catalogos.aspx">Catalogos</a></li>
+                                        <li class="current" runat="server" id="Edicion_Calif"><a href=".././Calidad/Editar_Calificacion.aspx">Cambio de Calificación</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="current"><a href="#">Asistencia</a>
+                                    <ul>
+                                        <li class="current" runat="server" id="Reclutamiento"><a href="#">Reclutamiento</a>
+                                            <ul>
+                                                <li class="current"><a href=".././Asistencia/X.aspx?hideindex=1">Captura de Aspirantes</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="current" runat="server" id="Capacitacion"><a href="#">Capacitación</a>
+                                            <ul>
+                                                <li class="current"><a href=".././Asistencia/X.aspx?hideindex=2">Tronco Común</a></li>
+                                                <li class="current"><a href=".././Asistencia/X.aspx?hideindex=4">Baja y Entrega de Aspirantes</a></li>
+                                                <li class="current" runat="server" id="ReasignacionCAP"><a href=".././Asistencia/X.aspx?hideindex=3">Reasignacion de Instructor</a></li>
+                                                <li class="current" runat="server" id="SecundariasCAP"><a href=".././Capacitacion/Secundarias.aspx">Capacitacion Secundaria</a></li>
+                                                <li class="current" runat="server" id="SecundariasEntrega"><a href=".././Capacitacion/X.aspx?hideindex=4">Entrega Secundarias</a></li>
+                                                <li class="current" runat="server" id="HOCAP"><a href=".././Capacitacion/HO.aspx">Habilidades Operativas</a></li>
+                                                <li class="current" runat="server" id="HOEntrega"><a href=".././Capacitacion/X.aspx?hideindex=4&HO=True">Entrega Habilidades Operativas</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="current" runat="server" id="Operaciones"><a href="#">Operaciones</a>
+                                            <ul>
+                                                <li class="current"><a href=".././Asistencia/X.aspx?hideindex=5">Asignación de Supervisor</a></li>
+                                                <li class="current"><a href=".././Asistencia/X.aspx?hideindex=6">Solicitud de Baja</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="current" runat="server" id="Nomina"><a href="#">Nómina</a>
+                                            <ul>
+                                                <li class="current"><a href=".././Asistencia/X.aspx?hideindex=8">Altas</a></li>
+                                                <li class="current"><a href=".././Asistencia/X.aspx?hideindex=9">Bajas</a></li>
+                                                <li class="current"><a href=".././Asistencia/X.aspx?hideindex=10">Cambios</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="current" runat="server" id="Alta"><a href=".././Asistencia/X.aspx?hideindex=11">Alta Administrativos</a></li>
+                                    </ul>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+
+
+
+                    </ul>
+                </nav>
+            </header>
+
+        </div>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <div id="footer">
+            <footer>
+                <p>
+                    <a href=".././Calidad/Default.aspx">Inicio</a> | <a href="#">Sistema de Asistencia</a>  | <a href="#">Reportes</a> | <a href=".././Calidad/Password.aspx">Cambio de Contraseña</a> |
+                    <asp:LoginStatus ID="LoginStatus2" runat="server" />
+                </p>
+                <p>Isaac Contreras 2019 &copy; </p>
+            </footer>
+        </div>
+
+
+    </form>
+
+
+</body>
+
+</html>
